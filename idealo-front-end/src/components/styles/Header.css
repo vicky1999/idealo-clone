@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+.header {
+    display: block;
+    background-color: #0a3761;
+    align-items: center;
+    color: white;
+}
+.header > img {
+    width: 100px;
+    height: 60px;
+}
+
+.header > p {
+    color:  #94abd8;
+    padding-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.option > a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.option > p {
+    padding: 0;
+    margin:0;
+}

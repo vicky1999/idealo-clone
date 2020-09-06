@@ -1,0 +1,10 @@
+.Product {
+    display:inline;
+    padding: 25px;
+    color: black;
+}
+
+.Product > img {
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,23 @@
+
+.Popular {
+    display: flex;
+    margin: 20px;
+    font-size: 25px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.Popular > hr {
+    margin: 10px;
+    flex: 0 0 100%;
+    display:inline;
+}
+
+.slider {
+    width: 100px;
+    height: 100px;
+}
+
+.captions {
+    padding: 0;
+    display: flex;   
+}

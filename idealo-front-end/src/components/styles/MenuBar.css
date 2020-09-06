@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+.MenuBar {
+    background-color: #84a1da;
+    margin:0;
+}
+.tools {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.menu, .notepad,.login {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    justify-content: center;
+    width: 700px;
+    min-width: 150px;
+}
+
+.searchauto {
+    background-color:white;
+    width: 500;
+    
+}
+
+.notepad:hover, .login:hover {
+    cursor: pointer;
+
+}

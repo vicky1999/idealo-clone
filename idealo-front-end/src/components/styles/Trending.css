@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+.trending, .scroller {
+    background-color: #0a3761;
+    display: flex;
+    overflow-x: scroll;
+    color: white;
+    padding: 10px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.trending::-webkit-scrollbar,.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.trending > h2:hover {
+    cursor: pointer;
+}
+
+.trending > *, .scroller > * {
+    white-space: nowrap;
+    padding-right: 30px;
+}
+.title > p {
+    color: #94abd8;
+    font-style: italic;
+}

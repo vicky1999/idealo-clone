@@ -1,0 +1,13 @@
+
+.Slides {
+    justify-content: center;
+}
+
+.captions {
+    color: white;
+    padding-top: 300px;
+}
+
+.captions > h2 {
+    word-wrap: break-all;
+}
