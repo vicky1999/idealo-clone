@@ -1,0 +1,24 @@
+.Bargain {
+    background-color: #94b6c0;
+}
+
+.Bargain > p {
+    font-size: 25px;
+    float: left;
+    padding: 50px 100px;
+    padding-bottom: 0px;
+}
+
+.loginBtn {
+    font-size: large;
+    margin-left: 20px;
+    border-radius: 5px;
+    align-self: center;
+    color:white;
+    background-color: #ff5e00;
+    padding:5px 30px;
+}
+
+.loginBtn:hover {
+    background-color: #bd441f;
+}

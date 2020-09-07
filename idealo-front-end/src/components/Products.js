@@ -1,12 +1,13 @@
 import React from 'react';
 import './styles/Product.css';
-import logo from './Images/logo.png';
-const Product= () => {
+
+const Product= (props) => {
+    console.log(props.image);
     return (
         <div className="Product">
-            <img src={logo} alt="logo" />
-            <p>from $620</p>
-            <h6>Apple iPhone 11</h6>
+            <img src={require( `${ props.image }` )} alt="preview" />
+            <p>{props.price}</p>
+            <h6>{props.name}</h6>
         </div>
     )
 }

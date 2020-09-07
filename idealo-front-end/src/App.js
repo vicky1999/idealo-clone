@@ -4,7 +4,7 @@ import NavBar from './components/MenuBar';
 import Trending from './components/Trending';
 import Slides from './components/Slides';
 import Popular from './components/Popular';
-
+import Bargain from './components/Bargains';
 import './App.css';
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
       <Trending />
       <Slides />
       <Popular />
+      <Bargain />
     </div>
   );
 }

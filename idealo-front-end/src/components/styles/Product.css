@@ -1,10 +1,11 @@
 .Product {
     display:inline;
-    padding: 25px;
+    margin: 50px;
     color: black;
+    background-color: white;
 }
 
 .Product > img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
 }
