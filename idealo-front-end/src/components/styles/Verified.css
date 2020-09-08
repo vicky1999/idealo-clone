@@ -1,0 +1,20 @@
+.Verified {
+    background-color: #B2D1DD;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.Verified > img {
+    width: 150px;
+    height: 70px;
+}
+.verifiedTxt {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    margin: 10px 50px;
+}   

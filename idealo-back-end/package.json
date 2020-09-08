@@ -1,0 +1,19 @@
+{
+  "name": "idealo-back-end",
+  "version": "1.0.0",
+  "description": "Clone of Idealo ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.3",
+    "nodemon": "^2.0.4"
+  }
+}

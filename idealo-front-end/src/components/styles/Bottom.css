@@ -1,0 +1,30 @@
+.Bottom {
+    background-color: #083250;
+    padding: 20px;
+}
+.Bottom > h4 {
+    color: white;
+}
+.stores > img {
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 15px 10px;
+}
+
+.policies,.countries,.prices {
+    display: flex;
+    justify-content: center;
+    color: #87A8C1;
+    font-size: 14px;
+}
+.countries > ul {
+    display: flex;
+}
+.countries {
+    text-transform: capitalize;
+}
+.prices > p{
+    max-width: 1100px;
+}

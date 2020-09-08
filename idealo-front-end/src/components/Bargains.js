@@ -2,20 +2,33 @@ import React from 'react';
 import Product from './Products';
 import './styles/Bargains.css';
 
+import {gql,useQuery} from '@apollo/client';
+
 import Carousel from 'react-elastic-carousel';
 
-const results= [
-    {"id":"1","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"2","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"3","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"4","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"5","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"6","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"7","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"8","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"9","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"},
-    {"id":"10","image":'./Images/logo.png', "price":"$ 660", "name": "Phone"}
-]
+// const results= [
+//     {"id":"1","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"2","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"3","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"4","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"5","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"6","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"7","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"8","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"9","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"},
+//     {"id":"10","image":'Bargains/office_professional_2019.jpg', "price":"$ 1000", "name": "Microsoft Office Professional 2019"}
+// ]
+
+const BargainQuery=gql`
+    {
+        bargain {
+            id
+            name
+            price
+            imageUrl
+        }
+    }
+`;
 
 const breakPoints = [
     {width: 1,itemsToShow:1},
@@ -27,19 +40,23 @@ const breakPoints = [
 
 const display = (item) => {
     console.log(item);
-    return (<div className="products"><Product key={item.id} image={item.image} price={item.price} name={item.name} /></div>)
+    return (<div className="products"><Product key={item.id} image={item.imageUrl} price={item.price} name={item.name} /></div>)
 }
 
 const Bargain = () => {
-    return (
-        <div className="Bargain">
-            <p>Receive idealo bargains, promotions & news by email 
-                <button className="loginBtn">Log In</button>
-            </p>
-            <Carousel breakPoints={breakPoints}>
-                {results.map(display)}
-            </Carousel>           
-        </div>
+    const {loading,err,data}=useQuery(BargainQuery);
+    if(loading) return <p>Loading...</p>;
+    if(err) return <p>Error!</p>;
+    if(data)    
+        return (
+            <div className="Bargain">
+                <p>Receive idealo bargains, promotions & news by email 
+                    <button className="loginBtn">Log In</button>
+                </p>
+                <Carousel breakPoints={breakPoints}>
+                    {data.bargain.map(display)}
+                </Carousel>           
+            </div>
     )
 }
 

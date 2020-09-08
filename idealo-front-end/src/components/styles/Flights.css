@@ -1,0 +1,21 @@
+.Flights {
+    background-image: linear-gradient(#375058 20%,#C8D198 90%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 30px;
+}
+
+.details {
+    padding: 20px;
+    display: inline;
+    word-wrap: break-word;
+}
+.details > p {
+    color: #F4F6F7;
+}
+.flightBanners {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 5px;
+}

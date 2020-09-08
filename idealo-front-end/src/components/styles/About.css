@@ -1,0 +1,36 @@
+.About {
+    display:inline;
+}
+
+.About > p {
+    font-size: 30px;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container > div {
+    margin: 10px;
+    max-width: 300px;
+    justify-content: center;
+}
+
+.content {
+    text-align: justify;    
+}
+
+.icon {
+    color: white;   
+}
+
+.icons {
+    color: #B2D1DD;
+}
+
+.detail {
+    min-width: 300px;
+    display: inline;
+}

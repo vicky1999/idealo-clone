@@ -1,0 +1,17 @@
+.Options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #003F6D;
+}
+.block {
+    color: #87A8C1;
+    text-align: justify;
+    display: inline;
+    margin: 10px 50px;
+    font-weight: 500;
+}
+
+.block > p {
+    margin: 5px 0px;
+}

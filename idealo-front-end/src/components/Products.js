@@ -5,7 +5,7 @@ const Product= (props) => {
     console.log(props.image);
     return (
         <div className="Product">
-            <img src={require( `${ props.image }` )} alt="preview" />
+            <img src={require( `./Images/${ props.image }` )} alt="preview" />
             <p>{props.price}</p>
             <h6>{props.name}</h6>
         </div>
