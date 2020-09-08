@@ -18,4 +18,5 @@
     display: flex;
     flex-wrap: wrap;
     padding: 25px 5px;
+    align-content: justify;
 }

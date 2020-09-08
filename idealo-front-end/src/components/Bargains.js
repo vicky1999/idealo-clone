@@ -32,10 +32,10 @@ const BargainQuery=gql`
 
 const breakPoints = [
     {width: 1,itemsToShow:1},
-    {width: 360,itemsToShow:2},
-    {width: 542,itemsToShow:3},
-    {width: 724,itemsToShow:4},
-    {width: 910,itemsToShow:5}
+    {width: 500,itemsToShow:2},
+    {width: 650,itemsToShow:3},
+    {width: 900,itemsToShow:4},
+    {width: 1000,itemsToShow:5}
 ];
 
 const display = (item) => {
