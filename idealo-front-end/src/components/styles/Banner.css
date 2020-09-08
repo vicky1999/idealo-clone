@@ -7,6 +7,7 @@
     padding-right: 0px;
     opacity: 1;
     cursor: pointer;
+    min-width: 320px;
 }
 .Banner:hover {
     opacity: 0.7;
@@ -16,6 +17,7 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: larger;
+    
 }
 .icon {
     color: gray;
@@ -30,7 +32,9 @@
 
 .price {
     display: flex;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: 0;
+    min-width: 40px;
     padding: 2px 10px;
     background-color: orangered;
 }

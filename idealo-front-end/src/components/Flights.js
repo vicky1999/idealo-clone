@@ -10,14 +10,13 @@ const Flights = () => {
                 <p> Simply compare good flight offers from numerous airlines worldwide</p>
             </div>
             <div className="flightBanners">
-                <Banner country="Mallorca" price="33"/>
-                <Banner country="abcd" price="25"/>
-                <Banner country="Mallorca" price="33"/>
-                <Banner country="abcd" price="25"/>
-                <Banner country="Mallorca" price="33"/>
-                <Banner country="abcd" price="25"/>
-                <Banner country="Mallorca" price="33"/>
-                <Banner country="abcd" price="25"/>
+                <Banner country="Mallorca" price="21"/>
+                <Banner country="Bangkok" price="328"/>
+                <Banner country="Antalya" price="35"/>
+                <Banner country="Istanbul" price="60"/>
+                <Banner country="New York" price="185"/>
+                <Banner country="Barcelona" price="21"/>
+                <Banner country="Vienna" price="21"/>
                 
             </div>
         </div>
